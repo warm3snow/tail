@@ -4,12 +4,12 @@
 package watch
 
 import (
+	"gopkg.in/tomb.v1"
 	"os"
 	"runtime"
 	"time"
 
-	"github.com/hpcloud/tail/util"
-	"gopkg.in/tomb.v1"
+	"github.com/warm3snow/tail/util"
 )
 
 // PollingFileWatcher polls the file for changes.

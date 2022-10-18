@@ -7,6 +7,7 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
+	"gopkg.in/tomb.v1"
 	"io"
 	"io/ioutil"
 	"log"
@@ -15,10 +16,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hpcloud/tail/ratelimiter"
-	"github.com/hpcloud/tail/util"
-	"github.com/hpcloud/tail/watch"
-	"gopkg.in/tomb.v1"
+	"github.com/warm3snow/tail/ratelimiter"
+	"github.com/warm3snow/tail/util"
+	"github.com/warm3snow/tail/watch"
 )
 
 var (
